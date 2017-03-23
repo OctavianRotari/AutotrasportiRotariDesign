@@ -6,12 +6,14 @@ var htmlMin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
+var svgMin = require('gulp-svgmin');
 
 var paths = {
   bootstrap: 'src/vendors/css/bootstrap.css',
   sass: 'src/resources/scss/*.scss',
   html: 'src/index.html',
-  js: [ 'src/vendors/js/bootstrap.js' ]
+  js: [ 'src/vendors/js/bootstrap.js' ],
+  svg: 'src/resources/img/*.svg'
 };
 
 function style() {
@@ -42,6 +44,12 @@ function watch() {
   gulp.watch(paths.html, htmlMinify);
 }
 
-var build = gulp.series(style, javaScriptUglify, htmlMinify, watch);
+function svgMinify() {
+  return gulp.src(paths.svg)
+    .pipe(svgMin())
+    .pipe(gulp.dest('dist/img/'));
+}
+
+var build = gulp.series(style, javaScriptUglify, svgMinify, htmlMinify, watch);
 
 gulp.task('default', build);

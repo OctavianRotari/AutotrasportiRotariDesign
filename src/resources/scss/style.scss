@@ -1,5 +1,109 @@
+$porcelain: #ECF0F1;
+$dark-blue: #514c62;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(img/mechanics-hands.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+nav {
+  height: 10%;
+}
+
+nav {
+  ul {
+    text-align: right;
+  }
+
+  ul {
+    li {
+      font-family: Helvetica;
+      color: $porcelain;
+      font-size: 18px;
+      font-weight: lighter;
+      display: inline-block;
+      margin-bottom: 0;
+      margin: 30px 15px 0 0;
+      text-transform: uppercase;
+    }
+
+    li:last-child {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+.header {
+  .container {
+    height: 90%;
+  }
+}
+
+.title {
+  text-align: center;
+  height: 100%;
+}
+
+.title {
+  div {
+    height: 100%;
+  }
+
+  h1 {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-family: Georgia;
+    font-size: 48px;
+    color: $porcelain;
+    line-height: 1.2em;
+  }
+}
+
+.servizi {
+  .container {
+    box-shadow: 0 0 30px #333;
+  }
+
+  .servicies {
+    text-align: center;
+  }
+
+  .service {
+    text-align: center;
+  }
+
+  h2, h3 {
+    line-height: 1.2em;
+    color: $dark-blue;
+    font-family: Georgia;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .service.middle h3{
+    margin-bottom: 1.5em;
+  }
+
+  img {
+    height: 120px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 }
