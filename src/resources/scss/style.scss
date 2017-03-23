@@ -13,6 +13,7 @@ $dark-blue: #514c62;
   background-size: cover;
   background-position: center;
   height: 100vh;
+  box-shadow: -3px 0 32px #333;
 }
 
 nav {
@@ -71,8 +72,13 @@ nav {
 }
 
 .servizi {
+  height: 100vh;
+}
+
+.servizi {
   .container {
     box-shadow: 0 0 30px #333;
+    height: 100%;
   }
 
   .servicies {
@@ -81,6 +87,7 @@ nav {
 
   .service {
     text-align: center;
+    margin-top: 15%;
   }
 
   h2, h3 {
@@ -90,6 +97,7 @@ nav {
   }
 
   h2 {
+    margin-top: 60px;
     font-size: 38px;
   }
 
@@ -105,5 +113,19 @@ nav {
     height: 120px;
     margin-bottom: 15px;
     margin-top: 15px;
+  }
+}
+
+.flotta {
+  .container {
+    width: 100%;
+  }
+
+  .col-md-3 {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
   }
 }
