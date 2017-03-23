@@ -1,0 +1,28 @@
+{
+  "name": "autotrasporti-rotari",
+  "version": "1.0.0",
+  "description": "website company autotrasporti rotari",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OctavianRotari/AutotrasportiRotariDesign.git"
+  },
+  "author": "octavian rotari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OctavianRotari/AutotrasportiRotariDesign/issues"
+  },
+  "homepage": "https://github.com/OctavianRotari/AutotrasportiRotariDesign#readme",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}
